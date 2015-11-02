@@ -1,0 +1,21 @@
+{
+  "name": "basic_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "compile": "tsc -p .",
+    "build": "browserify src/main.tsx -p [ tsify --jsx react ] --debug -o dist/reactapp.js"
+  },
+  "author": "Michele Ursino",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "lodash": "^3.10.1",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "tsify": "^0.12.2",
+    "uniq": "^1.0.1"
+  }
+}

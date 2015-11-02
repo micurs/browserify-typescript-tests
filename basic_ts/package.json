@@ -1,0 +1,18 @@
+{
+  "name": "basic_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "compile": "tsc -p .",
+    "build": "browserify src/main.ts -p tsify --debug -o dist/sample.js"
+  },
+  "author": "Michele Ursino",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.8.5",
+    "jquery": "^2.1.4",
+    "uniq": "^1.0.1"
+  }
+}
