@@ -45,12 +45,6 @@ export default class GlTest extends React.Component<GlTestProps, {} > {
     this._camera = new THREE.PerspectiveCamera( 80, ar , 0.1, 1000 );
     this._camera.position.z = 2.0;
 
-    /*{
-      canvas: document.getElementById('glcanvas') as HTMLCanvasElement //  this.refs['canvas'] as HTMLCanvasElement
-    });*/
-    
-    //this._canvas = renderer.domElement; 
-    
     // Creating the geometry to render
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     var material = new THREE.MeshPhongMaterial( { color: 0x20ff20, shading: THREE.FlatShading } );
