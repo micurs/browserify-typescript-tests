@@ -8,6 +8,8 @@ This is a very basic example bundling plain vanilla javascript files in one.
 You need to have browserify install globally (`nom i browserify -g`). 
 After you install the local dependencies use `npm run build` to invoke browserify command.
 
+Explore [Basic Javascript example](tree/master/basic_js)
+
 
 ## 2 A Basic TypeScript example 
 
@@ -16,6 +18,8 @@ We use tsify plugin in browserify to preprocess the TypeScript files during bund
 Again the build is a single command in the package.json file you can invoke using npm:
 `npm run build`.
 
+Explore [Basic TypeScript example](tree/master/basic_ts)
+
 ## 3 Use Typescript and React components as .tsx files 
 
 Now that we have TypeScript working let's add React into the picture/ 
@@ -23,7 +27,9 @@ In this example we define React components in Typescript/JSX syntax in .tsx file
 Using tsify we can pass this parameter `--jsx react` to the Typescript compiler 
 managing the transformation of the .tsx files for our components.
 
-## 4 Gulp to compile and watch  
+Explore [TypeScript React components example](tree/master/react_ts)
+
+## 4 Using Gulp to compile and watch  
 
 Unitl now we had a single broserify command dealing with building our bundle.
 When the project grow in complexity we can move the process of tranforming our
@@ -38,5 +44,12 @@ javascript.
 Run `gulp --production` to producer a single uglified javascript file containing your code and
 all its depoendencies to be used in the application web page.
 
+Explore [Gulp to Browserify React components](tree/master/gulpreact_ts)
 
- 
+## 5 Testing THREE.js with React, Typescript and Browserify  
+
+Explore [Browserify React and THREE.js](tree/master/react_three_ts)
+
+## 6 Generating multiple bundle to optimize page specific code in separate files  
+
+Explore [Browserify Multi-file bundles](tree/master/gulpmultireact_ts)
